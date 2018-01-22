@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Local Weather API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background: url(https://i.stack.imgur.com/NO8hx.png);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .spacing {
+      padding: 5%;
+    }
+    .block {
+      background-color: rgb(30, 30, 30);
+      oppacity: 0.35;
+      color: silver;
+      padding: 50xp;
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 15px;
+      font-size: 1.5em;
+      padding-bottom: 2%;
+    }
+    #heading-main {
+      color: rgb(204, 0, 0);
+    }
+    #foot {
+      color: rgb(204, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html" class="btn btn-primary glyphicon glyphicon-chevron-left"></a>
+  </nav>
+  <div class="spacing"></div>
+
+
+  <div class="block text-center"><br>
+    <h1 class="text-center" id="heading-main"><strong>Local Weather App</strong></h1>
+    <div class="spacing"></div>
+
+    <h3 id="city" class="text-center"></h3>
+    <h4 id="temp" class="text-center"></h4>
+    <h4 class="text-center"><a href="#" id="toggle">Toggle C/F</a></h4>
+    <h2 id="currentW" class="text-center">current conditions</h2>
+    <h3 id="high-low"></h3>
+  </div>
+  </div>
+
+  <div class="spacing"></div>
+
+  <div class="text-center">
+
+    <h4 id="foot">By: Steven Morrison</h4>
+  </div>
+  <div class="spacing"></div>
+  <script src="./scripts/locw.js">
+    
+  </script>
+</body>
+
+</html>

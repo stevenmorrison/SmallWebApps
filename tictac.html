@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+  background-color: rgb(45,45,55);
+  color:white;
+  font-family: fantasy;
+  text-shadow: 2px 2px red;
+}
+#me {
+  color: white;
+}
+#grid {
+  margin-top: 40px;
+  
+  
+}
+.board {
+  width:90px;
+  height:90px;
+  margin-top: 3px;
+  border: solid 5px gold;
+  }
+.text-large {
+  font-size: 90px;
+  font-family: fantasy;
+  color: gold;
+}
+#choice-text {
+  display: inline;
+  text-shadow: 2px 2px red;
+  margin-left: 4px;
+  margin-right: 4px;  
+}
+.token-choice {
+  width:60px;
+  height:60px;
+  border: solid gold;
+  font-size: 30px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="./index.html" class="btn btn-primary glyphicon glyphicon-chevron-left"></a>
+    </nav>
+  <div class="text-center"> 
+  <h1 id="title"><i>Tic Tac Toe</i></h1>
+  <h4 id="me">By: Steven D. Morrison</h4>
+</div>
+
+<div class="text-center" id="tokenChoice">
+  <a class="btn btn-primary token-choice" id="X">X</a>
+  <h3 id="choice-text">Choose X's or O's  </h3>
+  <a class="btn btn-primary token-choice" id="O">O</a>
+</div>
+
+<div id="grid" class = text-center>
+  <a class="btn btn-primary board" data-i=0 data-j=0 id=0></a>
+  <a class="btn btn-primary board" data-i=0 data-j=1 id=1></a>
+    <a class="btn btn-primary board" data-i=0 data-j=2 id=2></a><br/>
+      
+  <a class="btn btn-primary board" data-i=1 data-j=0 id=3></a>
+  <a class="btn btn-primary board" data-i=1 data-j=1 id=4></a>
+  <a class="btn btn-primary board" data-i=1 data-j=2 id=5></a><br/>
+    
+  <a class="btn btn-primary board" data-i=2 data-j=0 id=6></a>
+  <a class="btn btn-primary board" data-i=2 data-j=1 id=7></a>
+  <a class="btn btn-primary board" data-i=2 data-j=2 id=8></a><br/>
+    
+      </div>
+      <div class="text-center">
+        <a class="btn btn-danger" id="reset">Reset</a>
+      </div>
+
+
+  <script src="./scripts/tictac.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+  background-color: rgb(30, 30, 30);
+}
+h1 {
+  color: Green;
+}
+#quote-display {
+  
+  width: 75%;
+  margin: auto;
+  font-family: fantasy, sans-serif;
+  font-size: 18px;
+  border: 5px solid gold;
+}
+#buttons-style {
+  padding-top: 10px;
+}
+i.fa.fa-facebook::before
+i.fa.fa-twitter::before
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="./index.html" class="btn btn-primary glyphicon glyphicon-chevron-left"></a>
+</nav>
+  
+
+
+
+
+<!-- code by Steven Morrison -->
+<h1 class="text-center">Steven's Quote Generator</h1>
+<div class="well text-center" id="quote-display">Click below to display a random quote
+</div>
+  <div class="row  text-center" id="buttons-style">
+ 
+<button type="button" class="btn btn-success" id="getQuote">New Quote</button>
+ <a id="rqtweetit" href="https://twitter.com/share" target="_blank">
+   <button type="button" class="btn btn-primary rq-btn"><i class="fa fa-twitter"></i>&nbsp;Tweet!</button>
+    </a>
+   
+  </div>
+</div> 
+<footer class="text-primary text-center"><br>By: Steven D. Morrison</footer>
+<script src="./scripts/quotes.js"></script>
+</body>
+</html>
